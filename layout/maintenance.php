@@ -15,6 +15,7 @@ echo $OUTPUT->doctype() ?>
 <body <?php echo $OUTPUT->body_attributes(); ?>>
 
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
+<?php echo theme_ws_html_breadcrumbs($OUTPUT, $PAGE); ?>
 <div class="page-frame">
 	<div id="page" class="container-fluid">
 

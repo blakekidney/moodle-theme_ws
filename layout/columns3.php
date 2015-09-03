@@ -27,9 +27,10 @@ echo $OUTPUT->doctype() ?>
 
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 <?php echo theme_ws_html_header($OUTPUT, $PAGE); ?>
+<?php echo theme_ws_html_breadcrumbs($OUTPUT, $PAGE); ?>
+
 <div class="page-frame">
 	<div id="page" class="container-fluid">
-
 		<div id="page-content" class="row-fluid">
 			<div id="<?php echo $regionbsid ?>" class="span9">
 				<div class="row-fluid">

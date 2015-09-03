@@ -142,6 +142,26 @@ function theme_ws_html_header(renderer_base $output, moodle_page $page) {
 </header>
 ';
 }
+/**
+ * Returns the html for the breadcrumbs band.
+ *
+ * @param renderer_base $output Pass in $OUTPUT.
+ * @param moodle_page $page Pass in $PAGE.
+ * @return string The html.
+ */
+function theme_ws_html_breadcrumbs(renderer_base $output, moodle_page $page) {
+	return '
+	<div id="breadcrumbs" class="band clearfix">
+		<div class="band-inner">
+			<nav class="breadcrumb-nav">
+				'.$output->navbar().'
+			</nav>
+			<div class="breadcrumb-btn">
+				'.$output->page_heading_button().'
+			</div>
+		</div>
+	</div>';
+}
 
 /**
  * Returns the html for the <footer> of the document.

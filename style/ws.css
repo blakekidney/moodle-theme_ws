@@ -217,11 +217,24 @@ background-color: #fff;
     text-transform: uppercase;
 */
 /****************************************************
-BREADCRUMBS
+BANDS & BREADCRUMBS
 *****************************************************/
-.breadcrumb-nav { opacity:0.6; }
-.breadcrumb-nav:hover { opacity:1; }
-.breadcrumb-nav .breadcrumb { 
+.band {
+	background-color:white;
+	padding:0 20px;
+}
+.band + .page-frame {
+	padding-top:0;
+}
+.breadcrumb-nav {
+	opacity:0.6;
+	float:left;
+	margin:0;
+}
+.breadcrumb-nav:hover {
+	opacity:1;
+}
+.breadcrumb-nav .breadcrumb {
 	color:#6d6059;
 	background-color:#fff;
 	font-family: "functionpro",tahoma,sans-serif;
@@ -229,8 +242,35 @@ BREADCRUMBS
     letter-spacing: 1px;
     line-height: normal;
     text-transform: uppercase;
+	background-color: #fff;
+	padding: 10px 10px 10px 0;
 }
 .breadcrumb > li > .divider { color:#6d6059; }
+.breadcrumb-btn {
+	float:right;
+	margin: 8px 0;
+}
+.breadcrumb-btn .singlebutton {
+	margin:0 0 0 10px;
+	float:left;
+	text-align:right;
+}
+.breadcrumb-btn .singlebutton input[type="submit"] {
+	background-color: #fbcca6;
+    color: #8a807a;
+    border-radius: 24px;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 4px 16px;
+}
+.breadcrumb-btn .singlebutton input[type="submit"]:hover {
+	background-color: #f8a663;
+    color: #413a35;
+}
+.breadcrumb-btn .singlebutton div {
+	padding:0;
+	margin:0;
+}
 /****************************************************
 FOOTER
 *****************************************************/
@@ -381,7 +421,8 @@ a.discussiontoggle {
 input[name="cancel"],
 #notice .singlebutton + .singlebutton input[value="Cancel"],
 .submit.buttons input[name="cancel"],
-a.discussiontoggle {
+a.discussiontoggle,
+html .btn-cancel {
 	background-color:#99908b; 	
 }
 /*
@@ -454,10 +495,15 @@ a.discussiontoggle img {
 /*
 OTHER 
 */
-a.button-red { background-color:#E03F2A }
-a.button-red:hover { background-color:#FF0000; }
-a.button-green { background-color:#86C440 }
-a.button-green:hover { background-color:#88EF02; }
+a.button-red, html .btn-danger { background-color:#E03F2A }
+a.button-red:hover, html .btn-danger:hover { background-color:#FF0000; }
+a.button-green, html .btn-success { background-color:#86C440 }
+a.button-green:hover, html .btn-success:hover { background-color:#88EF02; }
+html .btn-warning { background-color: #faa732; }
+html .btn-warning:hover { background-color: #f89406; }
+html .btn-info { background-color: #49afcd; }
+html .btn-info:hover { background-color: #2f96b4; }
+html .btn-inverse { background-color: #363636; }
 input.form-submit, input.form-submit, 
 input#id_submitbutton, input#id_submitbutton, 
 input#id_submitbutton2, input#id_submitbutton2, 
